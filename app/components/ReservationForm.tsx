@@ -68,12 +68,12 @@ export function ReservationForm({ isOpen, setIsOpen }: { isOpen: boolean, setIsO
           <div className="space-y-2">
             <Label htmlFor="people">Number of People</Label>
             <Select value={people} onValueChange={setPeople}>
-              <SelectTrigger id="people">
+              <SelectTrigger id="people" className="bg-white text-gray-900 border border-gray-300">
                 <SelectValue placeholder="Select number of people" />
               </SelectTrigger>
-              <SelectContent>
+              <SelectContent className="bg-white">
                 {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-                  <SelectItem key={num} value={num.toString()}>
+                  <SelectItem key={num} value={num.toString()} className="text-gray-900">
                     {num} {num === 1 ? 'person' : 'people'}
                   </SelectItem>
                 ))}
