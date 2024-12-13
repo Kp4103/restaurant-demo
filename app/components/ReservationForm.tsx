@@ -65,7 +65,7 @@ export function ReservationForm({ isOpen, setIsOpen }: { isOpen: boolean, setIsO
               required
             />
           </div>
-          <div className="space-y-2 bg-white">
+          <div className="space-y-2">
             <Label htmlFor="people">Number of People</Label>
             <Select value={people} onValueChange={setPeople}>
               <SelectTrigger id="people">
